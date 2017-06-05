@@ -1,0 +1,92 @@
+Classes:
+1)Livro
+
+2) Exemplar
+
+3) Cliente
+	3.1) Aluno
+	3.2) Professor
+	3.3) Tecnico administrativo
+
+4) Lista de Reserva
+
+5) Empréstimo
+
+Métodos:
+1)
+private:
+id;
+titulo;
+edicao;
+num_paginas;
+ano;
+autor;
+editora;
+genero;
+qtde_exemplares;
+bool lista_reserva;
+
+public:
+cadastrar();
+cadastrar_exemplares(int n,int id);
+excluir_exemplar(int id);
+editar_cadastro();
+excluir();
+buscar();
+
+1.1) 
+private:
+id;
+bool disponibilidade;
+dias_em_emprestimo;
+
+public:
+fazer_emp();
+
+2)
+private:
+cpf;
+nome;
+sexo;
+data_nasc;
+endereco;
+cep;
+telefone;
+email;
+bool pendencias;
+bool multa;
+
+
+2.1)
+private:
+limite_emprestimo;
+prazo_padrao;
+
+public:
+
+2.2)
+private:
+limite_emprestimo;
+prazo_padrao;
+
+public:
+
+2.3)
+private:
+limite_emprestimo;
+prazo_padrao;
+
+public:
+
+3)
+private:
+tamanho_fila;
+qtde_exemplares;
+proximo_fila;
+data_proximo;
+
+public:
+int penalidade; (qtde de dias)
+4)
+private:
+data
